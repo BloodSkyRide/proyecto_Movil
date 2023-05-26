@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title=""
+             x:Class="proyecto_movil.Views.LoginView"
+             NavigationPage.HasNavigationBar="False">
+
+
+    <ContentPage.Content>
+
+        <Grid>
+            <Image Source="wallpalper.jpg" Aspect="AspectFill"></Image>
+
+            <BoxView Color="#e67e22" Opacity="0.8" ></BoxView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="0" Source="preview.jpg" WidthRequest="200" HeightRequest="200" Margin="0,50,0,30"/>
+                <StackLayout Grid.Row="1" Padding="30,20">
+                    <Entry Placeholder="Correo Electronico" FontAttributes="Bold" PlaceholderColor="#2c3e50" Text="{Binding EmailTxt, Mode=TwoWay}"></Entry>
+                    <Entry Placeholder="Password" IsPassword="True" FontAttributes="Bold" PlaceholderColor="#2c3e50" Text="{Binding PasswordTxt, Mode=TwoWay}"></Entry>
+                    <Button Text="iniciar sesion" Command="{Binding LoginCommand}" BackgroundColor="White" CornerRadius="20" Margin="0,20,0,30" FontAttributes="Bold" TextColor="#e67e22" FontSize="Body" />
+
+                    <StackLayout Orientation="Horizontal">
+                        <!--<Label Text="Olvidaste tu contraseña?"  FontSize="15" FontAttributes="Bold"  />-->
+                        <Button Text="Olvidaste tu contraseña?" CornerRadius="20" FontAttributes="Bold"/>
+                        <!--<Label Text="Registrarse" HorizontalOptions="EndAndExpand" FontSize="15" FontAttributes="Bold"/>-->
+                        <Button Text="Registrarse" CornerRadius="20" FontAttributes="Bold"/>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="2" Margin="0,30,0,30" >
+
+                        <Label Text="Inicicar sesion con" HorizontalOptions="Center" FontAttributes="Bold" FontSize="15"/>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

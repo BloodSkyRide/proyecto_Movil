@@ -1,0 +1,17 @@
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\obj\Debug\netstandard2.0\proyecto_movil.csproj.AssemblyReference.cache
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\obj\Debug\netstandard2.0\proyecto_movil.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\obj\Debug\netstandard2.0\Views\LoginView.xaml.g.cs
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\obj\Debug\netstandard2.0\Views\ReservasView.xaml.g.cs
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\obj\Debug\netstandard2.0\Views\WelcomeView.xaml.g.cs
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\obj\Debug\netstandard2.0\proyecto_movil.AssemblyInfoInputs.cache
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\obj\Debug\netstandard2.0\proyecto_movil.AssemblyInfo.cs
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\obj\Debug\netstandard2.0\proyecto_movil.csproj.CoreCompileInputs.cache
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\obj\Debug\netstandard2.0\proyecto_movil.dll
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\obj\Debug\netstandard2.0\refint\proyecto_movil.dll
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\obj\Debug\netstandard2.0\proyecto_movil.pdb
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\bin\Debug\netstandard2.0\proyecto_movil.deps.json
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\bin\Debug\netstandard2.0\proyecto_movil.dll
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\bin\Debug\netstandard2.0\proyecto_movil.pdb
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\obj\Debug\netstandard2.0\ref\proyecto_movil.dll
