@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyecto_movil.Views.RegisterView"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="Registro.jpg" Aspect="AspectFill"></Image>
+            <Label Grid.Row="0" Text="Registrarse" HorizontalTextAlignment="Center"  Margin="0,50,0,0" FontSize="Medium" FontAttributes="Bold"></Label>
+            <StackLayout >
+                <Entry Placeholder="Usuario" Text="{Binding UserTxt, Mode=TwoWay}"></Entry>
+            </StackLayout>
+            <StackLayout >
+                <Entry Placeholder="Nombre" Text="{Binding Nametxt, Mode=TwoWay}"></Entry>
+            </StackLayout>
+            <StackLayout >
+                <Entry Placeholder="Password" IsPassword="True"></Entry>
+            </StackLayout>
+            <StackLayout >
+                <Entry Placeholder="Confirmar Password" IsPassword="True" Text="{Binding PasswordTxt, Mode=TwoWay}" ></Entry>
+            </StackLayout>
+            <StackLayout >
+
+                <Button Text="Enviar" BackgroundColor="Orange" HorizontalOptions="CenterAndExpand" TextColor="Black" Command="{Binding SaveCommand}" ></Button>
+            </StackLayout>
+        </StackLayout>
+
+        
+    </ContentPage.Content>
+</ContentPage>

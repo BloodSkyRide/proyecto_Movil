@@ -1,6 +1,8 @@
 ﻿using GalaSoft.MvvmLight.Command;
+
 using proyecto_movil.Models;
 using proyecto_movil.Views;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -10,19 +12,33 @@ namespace proyecto_movil.ViewModels
     {
 
         //Atributos
-        private string Email;
+        private string user;
         private string password;
+        private string name;
+        private int id;
+        private object listViewUser;
 
 
 
 
-        public string EmailTxt
+        public string Nametxt
+        {
+            get { return name; }
+            set { SetValue(ref this.name, value); }
+        }
+        public int Idtxt
+        {
+            get { return id; }
+            set { SetValue(ref this.id, value); }
+        }
+
+        public string UserTxt
         {
             get
             {
-                return this.Email;
+                return this.user;
             }
-            set { SetValue(ref this.Email, value); }
+            set { SetValue(ref this.user, value); }
         }
 
 
@@ -44,12 +60,32 @@ namespace proyecto_movil.ViewModels
             }
             set { }
         }
+        public ICommand RegisterCommand
+        {
+            get
+            {
+                return new RelayCommand(OpenViewRegister);
+            }
+            set { }
+        }
+
+        public ICommand SaveCommand
+        {
+
+            get
+            {
+                return new RelayCommand(SaveUser);
+            }
+            set
+            { }
+        }
+
 
 
         public async void Validate_login()
         {
 
-            UserModel Usr = App.DB.GetUserModel(Email, password).Result;
+            UserModel Usr = App.DB.GetUserModel(user, password).Result;
 
             if (Usr == null)
             {
@@ -60,8 +96,10 @@ namespace proyecto_movil.ViewModels
             }
             else
             {
-                await Application.Current.MainPage.DisplayAlert("Login", "Welcome to Xamarin", "Aceptar");
+                await Application.Current.MainPage.DisplayAlert("Login", "Bienvenido Señor " + Usr.User, "Aceptar");
                 await Application.Current.MainPage.Navigation.PushAsync(new ReservasView());
+                PasswordTxt = "";
+                UserTxt = "";
 
             }
 
@@ -70,10 +108,51 @@ namespace proyecto_movil.ViewModels
         public async void OpenViewRegister()
         {
 
-            await Application.Current.MainPage.Navigation.PushAsync(new WelcomeView());
+            await Application.Current.MainPage.Navigation.PushAsync(new RegisterView());
 
 
 
         }
+
+        public async Task LoadList()
+        {
+            listViewUser = await App.DB.GetModel<UserModel>();
+
+        }
+
+        public async void SaveUser()
+        {
+
+
+            if (string.IsNullOrEmpty(this.user))
+            {
+                await Application.Current.MainPage.DisplayAlert("Register", "Por favor Ingresar el Usuario", "Aceptar");
+                PasswordTxt = "";
+                return;
+            }
+
+
+            UserModel Usr = new UserModel();
+            Usr.Nombre = name;
+            Usr.Pw = password;
+            Usr.User = user;
+            Usr.UserId = id;
+
+
+            await App.DB.SaveModel<UserModel>(Usr, true);
+            await Application.Current.MainPage.DisplayAlert("Register", " Registro Exitoso", "Aceptar");
+
+
+            //await App.DB.SaveModel<UserModel>(Usr, false);
+            //await Application.Current.MainPage.DisplayAlert("Register", " Modificacion Exitosa", "Aceptar");
+
+
+        }
+        public UserViewModel()
+        {
+            LoadList();
+        }
+
+
     }
 }

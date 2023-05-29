@@ -689,3 +689,4 @@ C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\
 C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil.Android\obj\Debug\130\res\drawable\preview.png
 C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil.Android\obj\Debug\130\res\drawable\user.png
 C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil.Android\obj\Debug\130\res\drawable\wallpalper.jpg
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil.Android\obj\Debug\130\res\drawable\registro.jpg

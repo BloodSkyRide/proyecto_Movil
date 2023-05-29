@@ -15,3 +15,5 @@ C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\
 C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\bin\Debug\netstandard2.0\proyecto_movil.pdb
 C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\obj\Debug\netstandard2.0\ref\proyecto_movil.dll
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\obj\Debug\netstandard2.0\Views\RegisterView.xaml.g.cs
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\obj\Debug\netstandard2.0\Views\ListUserView.xaml.g.cs

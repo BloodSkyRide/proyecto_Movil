@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1POWiBwJAwB294abqW4DVofYYUy8fG0B4uXsbiRB69zbg/nd4UcKJ7r1oBBMyHkfKMQiPCR7PpbR8DQ0hD+S0Q==",
+  "dgSpecHash": "bFFsIzDmJY3dJJUeP4DSB8radcF+Cmv6kOQJKK+LYd0O8vkpiaDZtptWdlmNTpVLiXlI8zSpddazIRAgV7PdWw==",
   "success": true,
   "projectFilePath": "C:\\Users\\santi\\OneDrive\\Escritorio\\Proyecto_Movil\\proyecto_movil\\proyecto_movil\\proyecto_movil.Android\\proyecto_movil.Android.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\santi\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\santi\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\santi\\.nuget\\packages\\mvvmlightlibs\\5.4.1.1\\mvvmlightlibs.5.4.1.1.nupkg.sha512",
+    "C:\\Users\\santi\\.nuget\\packages\\rg.plugins.popup\\2.1.0\\rg.plugins.popup.2.1.0.nupkg.sha512",
     "C:\\Users\\santi\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
     "C:\\Users\\santi\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
     "C:\\Users\\santi\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",

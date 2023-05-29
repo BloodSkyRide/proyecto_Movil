@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace proyecto_movil.Views
@@ -9,6 +10,18 @@ namespace proyecto_movil.Views
         public ReservasView()
         {
             InitializeComponent();
+        }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            //await Navigation.PopAsync();
+            await Navigation.PopToRootAsync(); // HOME
+        }
+
+        private async void ListaUser_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ListUserView());
+
         }
     }
 }

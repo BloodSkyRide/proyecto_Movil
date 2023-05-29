@@ -6,6 +6,13 @@
               Title="Reservas de hotel" >
     <ContentPage.Content>
         <StackLayout>
+            <Button Clicked="Button_Clicked" Text="Atras">
+
+            </Button>
+
+
+            <Button x:Name="ListaUser"  Clicked="ListaUser_Clicked" Text="Listado de usuarios" />
+
             <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
