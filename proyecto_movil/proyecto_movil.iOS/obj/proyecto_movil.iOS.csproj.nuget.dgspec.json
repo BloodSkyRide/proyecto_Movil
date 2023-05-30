@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[10.1.5, )"
             },
+            "Rg.Plugins.Popup": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.7.0, )"

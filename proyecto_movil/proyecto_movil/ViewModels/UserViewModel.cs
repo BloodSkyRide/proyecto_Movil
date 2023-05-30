@@ -16,7 +16,8 @@ namespace proyecto_movil.ViewModels
         private string password;
         private string name;
         private int id;
-        private object listViewUser;
+        private object ListViewUser;
+
 
 
 
@@ -51,6 +52,15 @@ namespace proyecto_movil.ViewModels
             set { SetValue(ref this.password, value); }
         }
 
+        public object listViewUser
+        {
+            get
+            {
+                return this.ListViewUser;
+            }
+            set { SetValue(ref this.ListViewUser, value); }
+        }
+
 
         public ICommand LoginCommand
         {
@@ -75,6 +85,16 @@ namespace proyecto_movil.ViewModels
             get
             {
                 return new RelayCommand(SaveUser);
+            }
+            set
+            { }
+        }
+        public ICommand DeleteUserCommand
+        {
+
+            get
+            {
+                return new RelayCommand(borrarUsuario);
             }
             set
             { }
@@ -105,6 +125,7 @@ namespace proyecto_movil.ViewModels
 
 
         }
+
         public async void OpenViewRegister()
         {
 
@@ -152,6 +173,28 @@ namespace proyecto_movil.ViewModels
         {
             LoadList();
         }
+        public UserViewModel(UserModel item)
+        {
+            this.Nametxt = item.Nombre;
+            this.UserTxt = item.User;
+            this.PasswordTxt = item.Pw;
+            this.Idtxt = item.UserId;
+        }
+
+        public async void borrarUsuario()
+        {
+            UserModel Usr = new UserModel();
+
+            Usr.Nombre = this.Nametxt;
+            Usr.User = this.UserTxt;
+            Usr.Pw = this.password;
+            Usr.UserId = this.Idtxt;
+
+            await App.DB.DeleteModel(Usr);
+            await Application.Current.MainPage.DisplayAlert("Register", " Borrado Exitoso", "Aceptar");
+        }
+
+
 
 
     }

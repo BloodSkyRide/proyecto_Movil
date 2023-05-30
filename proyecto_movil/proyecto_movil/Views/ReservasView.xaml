@@ -2,11 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="proyecto_movil.Views.ReservasView"
+             NavigationPage.IconColor="Black"
              
-              Title="Reservas de hotel" >
+              Title="Lista de Usuarios" >
     <ContentPage.Content>
-        <StackLayout>
-            <Button Clicked="Button_Clicked" Text="Atras">
+        <StackLayout Spacing="10">
+            <Button Clicked="Button_Clicked" Text="Atras" BackgroundColor="#E74C3C">
 
             </Button>
 

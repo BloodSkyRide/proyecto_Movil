@@ -3957,6 +3957,7 @@
       "EntityFramework >= 6.4.4",
       "MvvmLightLibs >= 5.4.1.1",
       "Plugin.LocalNotification >= 10.1.5",
+      "Rg.Plugins.Popup >= 2.1.0",
       "Xamarin.Essentials >= 1.7.0",
       "Xamarin.Forms >= 5.0.0.2196",
       "proyecto_movil >= 1.0.0"
@@ -4015,6 +4016,10 @@
           "Plugin.LocalNotification": {
             "target": "Package",
             "version": "[10.1.5, )"
+          },
+          "Rg.Plugins.Popup": {
+            "target": "Package",
+            "version": "[2.1.0, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",

@@ -36,12 +36,12 @@ namespace proyecto_movil
 
         protected override void OnStart()
         {
-            var user = new UserModel();
-            user.Nombre = "DAVID";
-            user.User = "santiago";
-            user.Pw = "1234";
-            App.DB.SaveUserModel(user);
-            App.DB.SaveModel<UserModel>(user, true);
+            //var user = new UserModel();
+            //user.Nombre = "DAVID";
+            //user.User = "santiago";
+            //user.Pw = "1234";
+            //App.DB.SaveUserModel(user);
+            //App.DB.SaveModel<UserModel>(user, true);
         }
 
         protected override void OnSleep()

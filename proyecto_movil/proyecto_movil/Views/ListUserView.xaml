@@ -1,18 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="proyecto_movil.Views.ListUserView">
+             x:Class="proyecto_movil.Views.ListUserView"
+             Title="Listado de usuarios registrados">
     <ContentPage.Content>
         <StackLayout>
 
             <ListView x:Name="ListV"
               SeparatorVisibility="None"
               HasUnevenRows="true"
-               ItemSelected="ListV_ItemSelected"       
+              ItemSelected="lista_seleccionada"       
               IsRefreshing="False"
               IsPullToRefreshEnabled="True"
               SeparatorColor="Black"
-              ItemsSource="{Binding ListViewSource}">
+              ItemsSource="{Binding listViewUser}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -46,6 +47,8 @@
                 </ListView.ItemTemplate>
 
             </ListView>
+
+            <Button Text="hola"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

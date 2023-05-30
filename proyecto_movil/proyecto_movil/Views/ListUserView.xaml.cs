@@ -20,9 +20,9 @@ namespace proyecto_movil.Views
             InitializeComponent();
             BindingContext = new UserViewModel();
         }
-        private void ListV_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private void lista_seleccionada(object sender, SelectedItemChangedEventArgs e)
         {
-            PopupNavigation.Instance.PushAsync(new popUp.PopUpDetail(e.SelectedItem as UserModel));
+            PopupNavigation.Instance.PushAsync(new popUp.PopUpDetail(e.SelectedItem as UserModel ));
         }
     }
 }

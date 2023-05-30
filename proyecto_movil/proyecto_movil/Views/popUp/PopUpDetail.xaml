@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<popup:PopupPage  xmlns:popup="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup" 
+                  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyecto_movil.Views.popUp.PopUpDetail">
+
+    <StackLayout BackgroundColor="White" Margin="30" Padding="20" Spacing="10" VerticalOptions="Center">
+            <StackLayout>
+                <Entry  Placeholder="Usuario" Text="{Binding UserTxt, Mode=TwoWay}" PlaceholderColor="LightSlateGray"></Entry>
+            </StackLayout>
+            <StackLayout>
+                <Entry Placeholder="Nombre" Text="{Binding Nametxt, Mode=TwoWay}" PlaceholderColor="LightSlateGray"></Entry>
+            </StackLayout>
+            <StackLayout>
+                <Entry Placeholder="Contraseña" Text="{Binding PasswordTxt, Mode=TwoWay}"  PlaceholderColor="LightSlateGray"></Entry>
+            </StackLayout>
+
+            <StackLayout  Orientation="Horizontal" Margin="15" Spacing="20">
+                <Button Text="Aceptar"  BackgroundColor="LightSteelBlue" HorizontalOptions="StartAndExpand" Clicked="Button_Clicked"></Button>
+                <Button Text="Borrar Usuario"  BackgroundColor="LightSteelBlue" HorizontalOptions="StartAndExpand" Command="{Binding DeleteUserCommand}"></Button>
+        </StackLayout>
+        </StackLayout>
+   
+</popup:PopupPage>
