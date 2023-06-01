@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration.WindowsSpecific;
 using Xamarin.Forms.Xaml;
 
 namespace proyecto_movil.Views
@@ -23,6 +24,11 @@ namespace proyecto_movil.Views
         private void lista_seleccionada(object sender, SelectedItemChangedEventArgs e)
         {
             PopupNavigation.Instance.PushAsync(new popUp.PopUpDetail(e.SelectedItem as UserModel ));
+        }
+
+        private  void RefreshView_Refreshing(object sender, EventArgs e)
+        {
+            myRefreshView.IsRefreshing = true;
         }
     }
 }

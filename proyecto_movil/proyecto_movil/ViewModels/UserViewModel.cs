@@ -2,6 +2,7 @@
 
 using proyecto_movil.Models;
 using proyecto_movil.Views;
+using Rg.Plugins.Popup.Services;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -192,6 +193,9 @@ namespace proyecto_movil.ViewModels
 
             await App.DB.DeleteModel(Usr);
             await Application.Current.MainPage.DisplayAlert("Register", " Borrado Exitoso", "Aceptar");
+            await PopupNavigation.Instance.PopAsync();
+            ListUserView updateList = new ListUserView();
+            
         }
 
 

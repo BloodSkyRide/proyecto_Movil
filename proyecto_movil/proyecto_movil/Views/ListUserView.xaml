@@ -4,6 +4,9 @@
              x:Class="proyecto_movil.Views.ListUserView"
              Title="Listado de usuarios registrados">
     <ContentPage.Content>
+
+        <RefreshView x:Name="myRefreshView" RefreshColor="#e67e22" Refreshing="RefreshView_Refreshing" >
+            <ScrollView>
         <StackLayout>
 
             <ListView x:Name="ListV"
@@ -50,5 +53,7 @@
 
             <Button Text="hola"/>
         </StackLayout>
+            </ScrollView>
+        </RefreshView>
     </ContentPage.Content>
 </ContentPage>

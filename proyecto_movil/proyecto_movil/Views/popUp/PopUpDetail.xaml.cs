@@ -24,11 +24,15 @@ namespace proyecto_movil.Views.popUp
         {
             InitializeComponent();
             BindingContext = new UserViewModel(item);
+            
         }
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
             await PopupNavigation.Instance.PopAsync();     
         }
+
+         
+        
     }
 }
