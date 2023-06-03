@@ -14,6 +14,8 @@ namespace proyecto_movil.BD
         {
             _database = new SQLiteAsyncConnection(dbPath);
             _database.CreateTableAsync<UserModel>().Wait();
+            _database.CreateTableAsync<ReservationModel>().Wait();
+            _database.CreateTableAsync<MakeReservation>().Wait();
         }
 
 
@@ -52,6 +54,7 @@ namespace proyecto_movil.BD
         public Task<List<T>> GetModel<T>() where T : new()
         {
             return _database.Table<T>().ToListAsync();
+
 
         }
 

@@ -7,7 +7,7 @@ namespace proyecto_movil.Models
         [PrimaryKey, AutoIncrement]
         public int UserId { get; set; }
 
-        [MaxLength(10)]
+        [MaxLength(10), ]
         public string User { get; set; }
 
         [MaxLength(20)]

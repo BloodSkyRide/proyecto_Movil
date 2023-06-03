@@ -1,4 +1,5 @@
-﻿using System;
+﻿using proyecto_movil.ViewModels;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,6 +11,8 @@ namespace proyecto_movil.Views
         public ReservasView()
         {
             InitializeComponent();
+            BindingContext = new ReservasViewModel();
+
         }
 
         private async void Button_Clicked(object sender, EventArgs e)

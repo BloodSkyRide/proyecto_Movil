@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="proyecto_movil.Views.ReservasView"
-             NavigationPage.IconColor="Black"
+             IconImageSource="usuario.png"
              
               Title="Lista de Usuarios" >
     <ContentPage.Content>
@@ -13,10 +13,11 @@
 
 
             <Button x:Name="ListaUser"  Clicked="ListaUser_Clicked" Text="Listado de usuarios" />
+            <Button Text="Elegir Reservas" Command="{Binding commandReservation}"/>
 
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

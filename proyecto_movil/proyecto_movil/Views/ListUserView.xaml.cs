@@ -26,9 +26,6 @@ namespace proyecto_movil.Views
             PopupNavigation.Instance.PushAsync(new popUp.PopUpDetail(e.SelectedItem as UserModel ));
         }
 
-        private  void RefreshView_Refreshing(object sender, EventArgs e)
-        {
-            myRefreshView.IsRefreshing = true;
-        }
+        
     }
 }

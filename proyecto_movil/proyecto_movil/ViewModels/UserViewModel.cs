@@ -79,7 +79,9 @@ namespace proyecto_movil.ViewModels
             }
             set { }
         }
+        
 
+        
         public ICommand SaveCommand
         {
 
@@ -101,12 +103,25 @@ namespace proyecto_movil.ViewModels
             { }
         }
 
+        public ICommand editUserCommand
+        {
+
+            get
+            {
+                return new RelayCommand(editarUser);
+            }
+            set
+            { }
+        }
+
 
 
         public async void Validate_login()
         {
 
             UserModel Usr = App.DB.GetUserModel(user, password).Result;
+
+            
 
             if (Usr == null)
             {
@@ -118,7 +133,7 @@ namespace proyecto_movil.ViewModels
             else
             {
                 await Application.Current.MainPage.DisplayAlert("Login", "Bienvenido Señor " + Usr.User, "Aceptar");
-                await Application.Current.MainPage.Navigation.PushAsync(new ReservasView());
+                await Application.Current.MainPage.Navigation.PushAsync(new menu());
                 PasswordTxt = "";
                 UserTxt = "";
 
@@ -134,6 +149,20 @@ namespace proyecto_movil.ViewModels
 
 
 
+        }
+
+        public async void editarUser()
+        {
+
+            UserModel Usr = new UserModel();
+            Usr.Nombre = name;
+            Usr.Pw = password;
+            Usr.User = user;
+            Usr.UserId = id;
+
+
+            await App.DB.SaveModel<UserModel>(Usr, false);
+            await Application.Current.MainPage.DisplayAlert("Actualizacion", "Usuario actualizado ecitosamente!", "Aceptar");
         }
 
         public async Task LoadList()
@@ -163,6 +192,7 @@ namespace proyecto_movil.ViewModels
 
             await App.DB.SaveModel<UserModel>(Usr, true);
             await Application.Current.MainPage.DisplayAlert("Register", " Registro Exitoso", "Aceptar");
+            await PopupNavigation.Instance.PopAsync();
 
 
             //await App.DB.SaveModel<UserModel>(Usr, false);
@@ -194,8 +224,8 @@ namespace proyecto_movil.ViewModels
             await App.DB.DeleteModel(Usr);
             await Application.Current.MainPage.DisplayAlert("Register", " Borrado Exitoso", "Aceptar");
             await PopupNavigation.Instance.PopAsync();
-            ListUserView updateList = new ListUserView();
             
+
         }
 
 

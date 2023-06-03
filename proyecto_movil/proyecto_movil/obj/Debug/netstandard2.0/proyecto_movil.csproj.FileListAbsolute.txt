@@ -18,3 +18,7 @@ C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\
 C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\obj\Debug\netstandard2.0\Views\RegisterView.xaml.g.cs
 C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\obj\Debug\netstandard2.0\Views\ListUserView.xaml.g.cs
 C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\obj\Debug\netstandard2.0\Views\popUp\PopUpDetail.xaml.g.cs
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\obj\Debug\netstandard2.0\Views\SelectionReservation.xaml.g.cs
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\obj\Debug\netstandard2.0\Views\menu.xaml.g.cs
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\obj\Debug\netstandard2.0\Views\popUp\popUpEdit.xaml.g.cs
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil\obj\Debug\netstandard2.0\Views\MyReservations.xaml.g.cs

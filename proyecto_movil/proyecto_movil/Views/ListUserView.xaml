@@ -5,8 +5,8 @@
              Title="Listado de usuarios registrados">
     <ContentPage.Content>
 
-        <RefreshView x:Name="myRefreshView" RefreshColor="#e67e22" Refreshing="RefreshView_Refreshing" >
-            <ScrollView>
+        
+            
         <StackLayout>
 
             <ListView x:Name="ListV"
@@ -14,7 +14,7 @@
               HasUnevenRows="true"
               ItemSelected="lista_seleccionada"       
               IsRefreshing="False"
-              IsPullToRefreshEnabled="True"
+              IsPullToRefreshEnabled="false"
               SeparatorColor="Black"
               ItemsSource="{Binding listViewUser}">
                 <ListView.ItemTemplate>
@@ -29,14 +29,17 @@
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"></ColumnDefinition>
                                     <ColumnDefinition Width="*"></ColumnDefinition>
+                                    
                                 </Grid.ColumnDefinitions>
 
                                 <StackLayout Grid.Column="0" Grid.Row="0" Orientation="Vertical" HorizontalOptions="Center" >
+                                    
                                     <Label Text="{Binding User}" FontSize="15"></Label>
                                 </StackLayout>
 
-
+                                
                                 <StackLayout Grid.Column="1" Grid.Row="0" Orientation="Vertical"  Spacing="5" VerticalOptions="Center" >
+                                    
                                     <Label Text="{Binding Nombre}" FontSize="15"></Label>
 
                                 </StackLayout>
@@ -51,9 +54,9 @@
 
             </ListView>
 
-            <Button Text="hola"/>
+            
         </StackLayout>
-            </ScrollView>
-        </RefreshView>
+            
+        
     </ContentPage.Content>
 </ContentPage>

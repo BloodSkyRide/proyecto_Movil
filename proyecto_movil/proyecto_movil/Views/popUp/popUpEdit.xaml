@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<popup:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyecto_movil.Views.popUp.popUpEdit"
+                 xmlns:popup="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup">
+    <StackLayout BackgroundColor="White" Margin="30" Padding="20" Spacing="10" VerticalOptions="Center">
+        <StackLayout>
+            <Label Text="Nombre:" FontSize="Large" TextColor="red"/>
+            <Label Text="{Binding NombreHotel, Mode=TwoWay}" TextColor="Black"/>
+        </StackLayout>
+        <StackLayout>
+            <Label Text="Numero Hotel:" FontSize="Large" TextColor="red"/>
+            <Label Text="{Binding NumeroHotel, Mode=TwoWay}" TextColor="Black"/>
+        </StackLayout>
+        <StackLayout>
+            <Label Text="Fecha:" FontSize="Large" TextColor="red"/>
+            <Label Text="{Binding Fecha, Mode=TwoWay}" TextColor="Black"/>
+            
+        </StackLayout>
+
+        <StackLayout  Orientation="Horizontal" Margin="15" Spacing="20">
+            <Button Text="Cancelar"  BackgroundColor="LightSteelBlue" HorizontalOptions="StartAndExpand" Clicked="Button_Clicked"></Button>
+            <Button Text="Confirmar Reserva"  BackgroundColor="LightSteelBlue" HorizontalOptions="StartAndExpand" Command="{Binding okCommand}"></Button>
+        </StackLayout>
+    </StackLayout>
+</popup:PopupPage>

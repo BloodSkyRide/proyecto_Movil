@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyecto_movil.Views.menu"
+            xmlns:local="clr-namespace:proyecto_movil.Views"
+            BarBackgroundColor="#F39C12" >
+    
+  <!--Pages can be added as references or inline-->
+    <local:ListUserView Title="Usuarios" IconImageSource="usuario.png"/>
+    <local:SelectionReservation Title="Reservar" IconImageSource="reserva.png"/>
+    <local:MyReservations Title="Mis Reservas" IconImageSource="MisReservas.png"/>
+    
+</TabbedPage>

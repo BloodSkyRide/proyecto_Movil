@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyecto_movil.Views.SelectionReservation"
+             Title="Seleccionar Fechas">
+    <Frame>
+    <StackLayout HorizontalOptions="Center">
+        
+        <StackLayout>
+            
+            <Label Text="Fecha de Entrada"/>
+            <DatePicker x:Name="StartDate" DateSelected="StartDate_DateSelected" Format="D" />
+            <Label Text="Fecha de Salida"/>
+            <DatePicker x:Name="EndDate" DateSelected="StartDate_DateSelected" BindingContext="{x:Reference StartDate}" MinimumDate="{Binding Yate}" Format="D"/>
+            
+            <Label x:Name="label" Text="Total Dias" TextColor="Red" FontSize="Large" HorizontalOptions="Center"/>
+           
+        </StackLayout>
+        <Button Text="Ver Reservas Disponibles" Command="{Binding viewCommand}" HorizontalOptions="Center" BackgroundColor="#F39C12" CornerRadius="20"></Button>
+        
+
+        
+        <StackLayout>
+            <ListView x:Name="ListV"
+              SeparatorVisibility="None"
+              HasUnevenRows="true"
+              ItemSelected="lista_seleccionada"       
+              IsRefreshing="False"
+              IsPullToRefreshEnabled="False"
+              SeparatorColor="Black"
+              ItemsSource="{Binding listViewReservation}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" ></RowDefinition>
+                                </Grid.RowDefinitions>
+
+                                <Grid.ColumnDefinitions >
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+
+                                <StackLayout Grid.Column="0" Grid.Row="0" Orientation="Vertical" HorizontalOptions="Center" >
+                                    <Label Text="{Binding Fecha}" FontSize="15"></Label>
+                                </StackLayout>
+
+
+                                <StackLayout Grid.Column="1" Grid.Row="0" Orientation="Vertical"  Spacing="5" VerticalOptions="Center" >
+                                    <Label Text="{Binding NombreHotel}" FontSize="15"></Label>
+
+                                </StackLayout>
+                                <StackLayout Grid.Column="2" Grid.Row="0" Orientation="Vertical"  Spacing="5" VerticalOptions="Center" >
+                                    <Label Text="{Binding NumeroHotel}" FontSize="15"></Label>
+
+                                </StackLayout>
+
+                            </Grid>
+
+                        </ViewCell>
+
+                    </DataTemplate>
+
+                </ListView.ItemTemplate>
+
+            </ListView>
+        </StackLayout>
+        
+    </StackLayout>
+
+    </Frame>
+</ContentPage>

@@ -772,3 +772,6 @@ C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\
 C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil.Android\obj\Debug\130\android\src\plugin\LocalNotification\NotificationActionReceiver.java
 C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil.Android\obj\Debug\130\android\src\plugin\LocalNotification\ScheduledAlarmReceiver.java
 C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil.Android\obj\Debug\130\android\bin\classes2.dex
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil.Android\obj\Debug\130\res\drawable\usuario.png
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil.Android\obj\Debug\130\res\drawable\reserva.png
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil.Android\obj\Debug\130\res\drawable\misreservas.png

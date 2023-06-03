@@ -11,13 +11,15 @@
             <StackLayout>
                 <Entry Placeholder="Nombre" Text="{Binding Nametxt, Mode=TwoWay}" PlaceholderColor="LightSlateGray"></Entry>
             </StackLayout>
-            <StackLayout>
-                <Entry Placeholder="Contraseña" Text="{Binding PasswordTxt, Mode=TwoWay}"  PlaceholderColor="LightSlateGray"></Entry>
+        
+        <StackLayout>
+                <Entry Placeholder="Contraseña" Text="{Binding PasswordTxt, Mode=TwoWay}"  PlaceholderColor="LightSlateGray" IsPassword="True"></Entry>
             </StackLayout>
 
-            <StackLayout  Orientation="Horizontal" Margin="15" Spacing="20">
-                <Button Text="Aceptar"  BackgroundColor="LightSteelBlue" HorizontalOptions="StartAndExpand" Clicked="Button_Clicked"></Button>
+            <StackLayout  Orientation="Horizontal" Margin="15" Spacing="10">
+            <Button Text="Aceptar"  BackgroundColor="LightSteelBlue" HorizontalOptions="StartAndExpand" Clicked="Button_Clicked" Command="{Binding editUserCommand}"></Button>
                 <Button Text="Borrar Usuario"  BackgroundColor="LightSteelBlue" HorizontalOptions="StartAndExpand" Command="{Binding DeleteUserCommand}"></Button>
+            
         </StackLayout>
         </StackLayout>
    

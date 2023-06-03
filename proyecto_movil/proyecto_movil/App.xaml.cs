@@ -1,5 +1,6 @@
 ﻿using proyecto_movil.BD;
 using proyecto_movil.Models;
+using proyecto_movil.ViewModels;
 using proyecto_movil.Views;
 using System;
 using System.IO;
@@ -26,22 +27,53 @@ namespace proyecto_movil
             }
         }
 
+       public static DataBaseQuery databaseR;
+
+        public static DataBaseQuery DBR
+        {
+            get
+            {
+                if (databaseR == null)
+                {
+                    databaseR = new DataBaseQuery(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "hola.db"));
+                }
+                return databaseR;
+            }
+        }
+
+        public static DataBaseQuery databaseRR;
+
+        public static DataBaseQuery DBRR
+        {
+            get
+            {
+                if (databaseRR == null)
+                {
+                    databaseRR = new DataBaseQuery(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "hola.db"));
+                }
+                return databaseRR;
+            }
+        }
+
         public App()
         {
             InitializeComponent();
 
 
+            //MainPage = new NavigationPage(new WelcomeView());
             MainPage = new NavigationPage(new WelcomeView());
         }
 
         protected override void OnStart()
         {
-            //var user = new UserModel();
-            //user.Nombre = "DAVID";
-            //user.User = "santiago";
-            //user.Pw = "1234";
-            //App.DB.SaveUserModel(user);
-            //App.DB.SaveModel<UserModel>(user, true);
+            //var reservacion = new ReservationModel();
+
+            //reservacion.NombreHotel = "las piscinas termicas";
+            //reservacion.NumeroHotel = "310830556";
+            //DateTime fecha = DateTime.Now;
+            //reservacion.Fecha = fecha;
+            //App.DBR.SaveModel<ReservationModel>(reservacion, true);
+     
         }
 
         protected override void OnSleep()
