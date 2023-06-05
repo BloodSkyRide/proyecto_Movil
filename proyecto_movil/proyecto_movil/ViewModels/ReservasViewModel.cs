@@ -69,6 +69,18 @@ namespace proyecto_movil.ViewModels
             set
             { }
         }
+        
+
+            public ICommand AggCommand
+        {
+
+            get
+            {
+                return new RelayCommand(SaveUser);
+            }
+            set
+            { }
+        }
         #endregion
 
 
@@ -113,6 +125,32 @@ namespace proyecto_movil.ViewModels
 
         #endregion
         #region Metodos
+
+
+        public async void SaveUser()
+        {
+
+
+            
+
+
+            ReservationModel reservas = new ReservationModel();
+            reservas.NombreHotel = this.NombreHotel;
+            reservas.NumeroHotel = this.NumeroHotel;
+            DateTime fecha = DateTime.Now;
+            reservas.Fecha = fecha;
+
+
+            await App.DBR.SaveModel<ReservationModel>(reservas, true);
+            await Application.Current.MainPage.DisplayAlert("Register", " Registro Exitoso", "Aceptar");
+
+
+
+            //await App.DB.SaveModel<UserModel>(Usr, false);
+            //await Application.Current.MainPage.DisplayAlert("Register", " Modificacion Exitosa", "Aceptar");
+
+
+        }
         public async void LoadList()
         {
 

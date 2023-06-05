@@ -5,8 +5,8 @@
              Title="Listado de usuarios registrados">
     <ContentPage.Content>
 
-        
-            
+
+        <Frame>
         <StackLayout>
 
             <ListView x:Name="ListV"
@@ -16,7 +16,7 @@
               IsRefreshing="False"
               IsPullToRefreshEnabled="false"
               SeparatorColor="Black"
-              ItemsSource="{Binding listViewUser}">
+              ItemsSource="{Binding listViewUser}"  >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -27,11 +27,12 @@
                                 </Grid.RowDefinitions>
 
                                 <Grid.ColumnDefinitions>
+                                    
                                     <ColumnDefinition Width="*"></ColumnDefinition>
                                     <ColumnDefinition Width="*"></ColumnDefinition>
                                     
                                 </Grid.ColumnDefinitions>
-
+                                   
                                 <StackLayout Grid.Column="0" Grid.Row="0" Orientation="Vertical" HorizontalOptions="Center" >
                                     
                                     <Label Text="{Binding User}" FontSize="15"></Label>
@@ -56,7 +57,7 @@
 
             
         </StackLayout>
-            
-        
+
+        </Frame>
     </ContentPage.Content>
 </ContentPage>

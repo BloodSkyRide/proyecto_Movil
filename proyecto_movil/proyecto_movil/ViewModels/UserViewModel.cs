@@ -163,6 +163,7 @@ namespace proyecto_movil.ViewModels
 
             await App.DB.SaveModel<UserModel>(Usr, false);
             await Application.Current.MainPage.DisplayAlert("Actualizacion", "Usuario actualizado ecitosamente!", "Aceptar");
+            await PopupNavigation.Instance.PopAsync();
         }
 
         public async Task LoadList()
@@ -192,7 +193,7 @@ namespace proyecto_movil.ViewModels
 
             await App.DB.SaveModel<UserModel>(Usr, true);
             await Application.Current.MainPage.DisplayAlert("Register", " Registro Exitoso", "Aceptar");
-            await PopupNavigation.Instance.PopAsync();
+            
 
 
             //await App.DB.SaveModel<UserModel>(Usr, false);

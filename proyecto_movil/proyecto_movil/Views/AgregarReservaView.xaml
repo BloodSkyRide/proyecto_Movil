@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyecto_movil.Views.AgregarReservaView">
+    <Frame>
+        <StackLayout Spacing="10" HorizontalOptions="Center">
+            <Image Source="añadir_reserva.jpg" Aspect="AspectFill"></Image>
+            <Entry Placeholder="Nombre Hotel" Text="{Binding NombreHotel, Mode=TwoWay}"/>
+            <Entry Placeholder="Numero Hotel" Text="{Binding NumeroHotel, Mode=TwoWay}"/>
+            <Button Text="Añadir" Command="{Binding AggCommand}"/>
+            <Button Text="Cerrar" Clicked="Button_Clicked"/>
+        </StackLayout>
+        
+    </Frame>
+</ContentPage>

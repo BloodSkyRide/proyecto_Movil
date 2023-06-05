@@ -68,7 +68,7 @@ namespace proyecto_movil
         {
             //var reservacion = new ReservationModel();
 
-            //reservacion.NombreHotel = "las piscinas termicas";
+            //reservacion.NombreHotel = "las piscinas Don lolo";
             //reservacion.NumeroHotel = "310830556";
             //DateTime fecha = DateTime.Now;
             //reservacion.Fecha = fecha;

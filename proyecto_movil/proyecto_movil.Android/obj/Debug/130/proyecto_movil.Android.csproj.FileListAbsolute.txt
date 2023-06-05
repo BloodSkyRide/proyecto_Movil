@@ -775,3 +775,5 @@ C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\
 C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil.Android\obj\Debug\130\res\drawable\usuario.png
 C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil.Android\obj\Debug\130\res\drawable\reserva.png
 C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil.Android\obj\Debug\130\res\drawable\misreservas.png
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil.Android\obj\Debug\130\res\drawable\anadir.png
+C:\Users\santi\OneDrive\Escritorio\Proyecto_Movil\proyecto_movil\proyecto_movil\proyecto_movil.Android\obj\Debug\130\res\drawable\reservation.jpg

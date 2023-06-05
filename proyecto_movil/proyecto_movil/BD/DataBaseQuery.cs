@@ -1,5 +1,6 @@
 ﻿using proyecto_movil.Models;
 using SQLite;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -54,6 +55,15 @@ namespace proyecto_movil.BD
         public Task<List<T>> GetModel<T>() where T : new()
         {
             return _database.Table<T>().ToListAsync();
+
+
+        }
+
+        public Task<List<UserModel>> GetModelUnidad<T>(UserModel modelo) where T : new()
+        {
+            int id = Int32.Parse(modelo.User);
+            
+            return _database.QueryAsync<UserModel>($"SELECT * FROM UserModel WHERE UserId = {id}");
 
 
         }

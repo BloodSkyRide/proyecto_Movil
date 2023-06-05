@@ -17,7 +17,7 @@
             </StackLayout>
 
             <StackLayout  Orientation="Horizontal" Margin="15" Spacing="10">
-            <Button Text="Aceptar"  BackgroundColor="LightSteelBlue" HorizontalOptions="StartAndExpand" Clicked="Button_Clicked" Command="{Binding editUserCommand}"></Button>
+            <Button Text="Editar Usuario"  BackgroundColor="LightSteelBlue" HorizontalOptions="StartAndExpand"  Command="{Binding editUserCommand}"></Button>
                 <Button Text="Borrar Usuario"  BackgroundColor="LightSteelBlue" HorizontalOptions="StartAndExpand" Command="{Binding DeleteUserCommand}"></Button>
             
         </StackLayout>

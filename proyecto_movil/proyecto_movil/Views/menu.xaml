@@ -9,5 +9,6 @@
     <local:ListUserView Title="Usuarios" IconImageSource="usuario.png"/>
     <local:SelectionReservation Title="Reservar" IconImageSource="reserva.png"/>
     <local:MyReservations Title="Mis Reservas" IconImageSource="MisReservas.png"/>
+    <local:AgregarReservaView Title="+ Reserva" IconImageSource="Reservation.png"/>
     
 </TabbedPage>

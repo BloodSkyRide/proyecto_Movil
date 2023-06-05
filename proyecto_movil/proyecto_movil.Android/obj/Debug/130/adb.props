@@ -1,2 +1,2 @@
-AdbTarget=-s 11ba5ca70503
+AdbTarget=-s emulator-5554
 AdbOptions=
